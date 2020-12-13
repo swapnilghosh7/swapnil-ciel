@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="loginWrap">
+        <p>Login Form</p>
+        <form #userlogin = "ngForm"  (submit)="onSubmit(userlogin)">
+            <mat-form-field class="example-full-width">
+                <mat-label>Username</mat-label>
+                <input type="text" name="username" id="username" ngModel>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" name="password" id="password" ngModel>
+            </mat-form-field>
+            
+            <button mat-button type='submit' color="primary">Login</button>
+        </form>
+        
+    </div>
+    
+</div>
+
